@@ -1,0 +1,15 @@
+pipeline{
+  agent any
+  stages{
+    stage("Build"){
+      sh "cd myproject1"
+      sh "sudo docker build -t localhost:8083/pyhtonapp"
+      sh "docker image ls"
+    }
+    stage("Push"){
+      
+    }
+    stage("Deploy"){
+    }
+  }
+}
