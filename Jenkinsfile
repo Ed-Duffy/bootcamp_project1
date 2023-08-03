@@ -6,7 +6,7 @@ pipeline{
   stages{
     stage("Build"){
       steps{
-      sh "cd myproject1"
+      sh "cd my_project1"
       sh "sudo docker build -t localhost:8083/pyhtonapp"
       sh "sudo docker image ls"
      }
