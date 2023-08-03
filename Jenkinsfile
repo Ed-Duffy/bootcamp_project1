@@ -7,7 +7,7 @@ pipeline{
     stage("Build"){
       steps{
       sh "cd my_project1"
-      sh "sudo docker build -t localhost:8083/pythonapp:newest"
+      sh "sudo docker build -t localhost:8083/pythonapp:jenkinsversion"
       sh "sudo docker image ls"
      }
     }
