@@ -8,10 +8,5 @@ pipeline{
       sh "sudo docker image ls"
     }
     }
-    stage("Push"){
-      
-    }
-    stage("Deploy"){
-    }
   }
 }
