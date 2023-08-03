@@ -7,7 +7,6 @@ pipeline{
     stage("Build"){
       steps{
       sh "cd my_project1"
-      sh "__pycache__"
       sh "sudo docker build -t localhost:8083/pythonapp:newest ."
       sh "sudo docker image ls"
      }
