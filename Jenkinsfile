@@ -9,10 +9,10 @@ pipeline{
       sh "cd myproject1"
       sh "sudo docker build -t localhost:8083/pyhtonapp"
       sh "sudo docker image ls"
-    }
+     }
     }
     stage("Push"){
-      sh "sudo dockee login localhost:8083 -u ${NEXUS_LOGIN_USR} -P  ${NEXUS_LOGIN_PSW}"
+      sh "sudo docker login localhost:8083 -u ${NEXUS_LOGIN_USR} -p  ${NEXUS_LOGIN_PSW}"
       }
     stage("Deploy"){
     }
