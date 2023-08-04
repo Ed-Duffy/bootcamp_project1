@@ -23,4 +23,14 @@ status VARCHAR(100)
 
 6.)
 
+7.) In order to automate this process I created a Jenkins pipeline and added a Jenkinsfile to the Git Repo. 
+
+8.) Once my pipeline was succesfully built I could check whether or not my build had been succesful by checking my localhost:5000 and checking for '[]' . Additionally to further test my build I added the below to my app.py file:
+
+@app.route('/test')
+def test():
+  return "Hey"
+
+
+
 
