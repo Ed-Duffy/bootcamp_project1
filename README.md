@@ -1,6 +1,7 @@
 Bootcamp Project 1 & 2 Documentation:
 
 1.) The initial project required me to make an SQL database and subsequent table in which a python application could log data entrys each time the application was run.
+
 2.) In order to complete these task I created a SQL database using the below commands:
 
 CREATE DATABASE myproject1;
